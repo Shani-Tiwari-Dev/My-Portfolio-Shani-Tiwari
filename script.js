@@ -14,3 +14,14 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     }
 });
+// Preloader with instant removal (no fade out)
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    // Set exact display time (2500ms = 2.5 seconds)
+    const displayTime = 2500;
+    
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, displayTime);
+});
